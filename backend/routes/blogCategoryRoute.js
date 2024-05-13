@@ -1,0 +1,10 @@
+const express=require('express');
+const route=express.Router();
+const {createblogCategory,getblogCategory,getAllblogCategory, updateblogCategory, deleteblogCategory}=require("../controllers/blogCategoryController");
+const { authMiddleware, isAdmin } = require('../middlewares/auth.middleware');
+route.post("/",isAdmin,createblogCategory);
+route.get("/:id",getblogCategory);
+route.get("/",getAllblogCategory);
+route.put("/:id",isAdmin,updateblogCategory);
+route.delete("/:id",isAdmin,deleteblogCategory);
+module.exports=route;
