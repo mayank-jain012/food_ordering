@@ -1,0 +1,78 @@
+body {
+  font-family: Roboto, sans-serif;
+}
+/* layout start here */
+.ant-layout{
+  min-height: 100vh;
+}
+.ant-layout-sider{
+  flex: 0 0 250px !important;
+  max-width: 250px !important;
+  min-height: 250px !important;
+  width: 250px !important;
+}
+.ant-layout-sider-collapsed{
+  flex: 0 0 80px !important;
+  max-width: 80px !important;
+  min-height: 80px !important;
+  width: 80px !important;
+}
+.sm-logo{
+  display: none;
+}
+
+.ant-layout-sider-collapsed .sm-logo{
+  display: block;
+}
+.ant-layout-sider-collapsed .lg-logo{
+  display: none;
+}
+.main{
+  overflow-y: scroll;
+  background-color: whitesmoke;
+}
+.trigger:hover{
+  color: #1890ff;
+}
+.logo{
+  background-color: #ffd333;
+  margin: 0;
+  height: 64px;
+}
+.ant-menu-title-content{
+  font-size: 16px;
+}
+.ant-layout-header h5{
+  line-height: 30px;
+  font-size: 14px;
+}
+.ant-layout-header p{
+ line-height: 20px; 
+ font-size: 13px;
+}
+.ant-layout-header div .badge{
+  top:16px;
+  right: -6px;
+}
+/* layout end here */
+/* dashboard start here */
+.dashboard-data{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.green{
+  color: green;
+}
+.red{
+  color: red;
+}
+thead{
+  
+  font-size: 20px;
+}
+tbody td ,
+tbody th{
+  font-size: 15px;
+}
+.quill{
+  background-color: white;
+}
